@@ -82,11 +82,10 @@ function play() {
         current16thNote = 0;
         nextNoteTime = audioContext.currentTime;
         timerWorker.postMessage("start");
-        return "stop";
-    } else {
+x    } else {
         timerWorker.postMessage("stop");
-        return "play";
     }
+    return false;
 }
 
 function resetCanvas (e) {
