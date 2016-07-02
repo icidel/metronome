@@ -82,7 +82,7 @@ function play() {
         current16thNote = 0;
         nextNoteTime = audioContext.currentTime;
         timerWorker.postMessage("start");
-x    } else {
+    } else {
         timerWorker.postMessage("stop");
     }
     return false;
